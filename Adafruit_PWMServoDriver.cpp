@@ -85,9 +85,9 @@ bool Adafruit_PWMServoDriver::begin(uint8_t prescale) {
 }
 
 /*!
- *  @brief  Sends a reset command to the PCA9685 chip over I2C
+ *  @brief  Sends a restart command to the PCA9685 chip over I2C
  */
-void Adafruit_PWMServoDriver::reset() {
+void Adafruit_PWMServoDriver::restart() {
   write8(PCA9685_MODE1, MODE1_RESTART);
   delay(10);
 }
